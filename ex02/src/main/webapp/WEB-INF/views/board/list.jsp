@@ -54,8 +54,13 @@
              			end="${pageMaker.endPage }">
              			<li class="paginate_button"><a href="#">${num }</a></li>
              		</c:forEach>
+             		
+             		<c:if test="${pageMaker.next }">
+             			<li class="paginate_button next"><a href="#">Next</a></li>
+             		</c:if>
              	</ul>
              </div>
+             <!-- end Pagination -->
              
              <!-- Modal 추가 -->
              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
